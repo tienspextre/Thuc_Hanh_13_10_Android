@@ -149,5 +149,21 @@ public class MainActivity extends AppCompatActivity {
                 textUniversity.setText(uni);
             }
         });
+        Button clear = findViewById(R.id.btn_clear);
+        clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView textPlatform = findViewById(R.id.txt_platformKQ);
+                textPlatform.setText("Platform: ");
+                TextView textGender = findViewById(R.id.txt_genderKQ);
+                textGender.setText("Gender: ");
+                TextView textRate = findViewById(R.id.txt_rateKQ);
+                textRate.setText("Rate: ");
+                TextView textCountry = findViewById(R.id.txt_countryKQ);
+                textCountry.setText("Country; ");
+                TextView textUniversity = findViewById(R.id.txt_universeKQ);
+                textUniversity.setText("Universities: ");
+            }
+        });
     }
 }
