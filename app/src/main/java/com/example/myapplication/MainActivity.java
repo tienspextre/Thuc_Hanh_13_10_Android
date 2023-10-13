@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
                 TextView textRate = findViewById(R.id.txt_rateKQ);
                 textRate.setText("Rate: ");
                 TextView textCountry = findViewById(R.id.txt_countryKQ);
-                textCountry.setText("Country; ");
+                textCountry.setText("Country: ");
                 TextView textUniversity = findViewById(R.id.txt_universeKQ);
                 textUniversity.setText("Universities: ");
             }
