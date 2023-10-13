@@ -18,7 +18,7 @@
                 android:id="@+id/myImageView"
                 android:layout_width="wrap_content"
                 android:layout_height="484dp"
-                android:src="@drawable/tw" />
+                android:src="@drawable/TW" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -92,7 +92,7 @@
             <ListView
                 android:id="@+id/listviewUniversity"
                 android:layout_width="match_parent"
-                android:layout_height="159dp" />
+                android:layout_height="wrap_content" />
             <Button
                 android:id="@+id/submitButton"
                 android:layout_width="match_parent"
