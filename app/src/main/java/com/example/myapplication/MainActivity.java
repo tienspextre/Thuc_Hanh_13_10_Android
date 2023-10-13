@@ -128,19 +128,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 TextView textPlatform = findViewById(R.id.txt_platformKQ);
+                textPlatform.setText("Platform: ");
+                TextView textGender = findViewById(R.id.txt_genderKQ);
+                textGender.setText("Gender: ");
+                TextView textRate = findViewById(R.id.txt_rateKQ);
+                textRate.setText("Rate: ");
+                TextView textCountry = findViewById(R.id.txt_countryKQ);
+                textCountry.setText("Country: ");
+                TextView textUniversity = findViewById(R.id.txt_universeKQ);
+                textUniversity.setText("Universities: ");
                 String pf = textPlatform.getText().toString();
                 for (int i = 0; i < platforms.size(); i++){
                     pf += platforms.get(i);
                     if (i < platforms.size() - 1) pf += ", ";
                 }
                 textPlatform.setText(pf);
-                TextView textGender = findViewById(R.id.txt_genderKQ);
                 textGender.setText(textGender.getText().toString() + selectedOption);
-                TextView textRate = findViewById(R.id.txt_rateKQ);
                 textRate.setText(textRate.getText().toString() + Integer.toString(stars));
-                TextView textCountry = findViewById(R.id.txt_countryKQ);
                 textCountry.setText(textCountry.getText().toString() + country);
-                TextView textUniversity = findViewById(R.id.txt_universeKQ);
                 String uni = textUniversity.getText().toString();
                 for (int i = 0; i < universities.size(); i++){
                     uni += universities.get(i);
